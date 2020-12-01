@@ -1,2 +1,2 @@
 # firstparis
-This is my first html test site. It is about paris!
+This is my very first html/css test site. It is about paris!
