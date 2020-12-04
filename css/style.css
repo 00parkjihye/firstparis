@@ -9,6 +9,10 @@ h1 {
   text-align: center;
 }
 
+.mainhead1 {
+  margin-top: 50px;
+}
+
 a {
   text-decoration: none;
 }
@@ -26,11 +30,6 @@ a {
   color: #85c1e9;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-#menu: hover {
-  color: #9FE2BF;
-  /* box-shadow: 0 2px 4px 0; */
 }
 
 .photo {
@@ -85,4 +84,117 @@ a {
   .article_wiki_b {
     font-size: 18px;
   }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+figure.effect {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 850px;
+  max-width: 1120px;
+  max-height: 600px;
+  width: 100%;
+  background: #84CDF6;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  font-size: 35x;
+}
+figure.effect * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+figure.effect img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.9;
+}
+figure.effect figcaption {
+  position: absolute;
+  top: 45%;
+  left: 7%;
+  right: 7%;
+  bottom: 45%;
+  border: 1px solid white;
+  border-width: 1px 1px 0;
+}
+figure.effect .heading {
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+figure.effect h2 {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+figure.effect h2 span {
+  font-weight: 800;
+}
+figure.effect h2:before,
+figure.effect h2:after {
+  position: absolute;
+  display: block;
+  width: 1000%;
+  height: 1px;
+  content: '';
+  background: white;
+  top: 50%;
+}
+figure.effect h2:before {
+  left: -1000%;
+}
+figure.effect h2:after {
+  right: -1000%;
+}
+figure.effect p {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0;
+  opacity: 0;
+  line-height: 1.6em;
+  font-size: 2em;
+}
+figure.effect a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.effect:hover img,
+figure.effect.hover img {
+  opacity: 0.25;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.effect:hover figcaption,
+figure.effect.hover figcaption {
+  top: 7%;
+  bottom: 7%;
+}
+figure.effect:hover p,
+figure.effect.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
