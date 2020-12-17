@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 h1 {
   font-family: "Big Shoulders Stencil Display", cursive;
   font-size: 60px;
@@ -30,6 +31,120 @@ a {
   color: #85c1e9;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+figure.effect {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 850px;
+  max-width: 1120px;
+  width: 100%;
+  color: #DAF7A6;
+  text-align: left;
+  font-size: 30px;
+  background-color: rgba( 250, 219, 216, 0.8 );
+}
+figure.effect * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.effect img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+figure.effect:after,
+figure.effect figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+figure.effect:after {
+  content: '';
+  background-color: rgba(115, 198, 182, 0.65);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+figure.effect figcaption {
+  z-index: 1;
+  padding-left: 370px;
+  padding-top: 310px;
+}
+figure.effect h3,
+figure.effect .links {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0;
+}
+figure.effect h3 {
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  opacity: 0;
+}
+figure.effect p {
+  font-size: 0.8em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  opacity: 0;
+  top: 50%;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+figure.effect i {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 20px 25px;
+  font-size: 34px;
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+figure.effect a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+figure.effect:hover img,
+figure.effect.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+figure.effect:hover:after,
+figure.effect.hover:after {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+figure.effect:hover h3,
+figure.effect.hover h3,
+figure.effect:hover p,
+figure.effect.hover p,
+figure.effect:hover i,
+figure.effect.hover i {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .photo {
@@ -88,7 +203,7 @@ a {
 
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-figure.effect {
+figure.pariseffect {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
@@ -104,18 +219,18 @@ figure.effect {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   font-size: 35x;
 }
-figure.effect * {
+figure.pariseffect * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
 }
-figure.effect img {
+figure.pariseffect img {
   max-width: 100%;
   position: relative;
   opacity: 0.9;
 }
-figure.effect figcaption {
+figure.pariseffect figcaption {
   position: absolute;
   top: 45%;
   left: 7%;
@@ -124,7 +239,7 @@ figure.effect figcaption {
   border: 1px solid white;
   border-width: 1px 1px 0;
 }
-figure.effect .heading {
+figure.pariseffect .heading {
   overflow: hidden;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
@@ -132,7 +247,7 @@ figure.effect .heading {
   bottom: 0;
   width: 100%;
 }
-figure.effect h2 {
+figure.pariseffect h2 {
   display: table;
   margin: 0 auto;
   padding: 0 10px;
@@ -142,11 +257,11 @@ figure.effect h2 {
   text-transform: uppercase;
   font-weight: 400;
 }
-figure.effect h2 span {
+figure.pariseffect h2 span {
   font-weight: 800;
 }
-figure.effect h2:before,
-figure.effect h2:after {
+figure.pariseffect h2:before,
+figure.pariseffect h2:after {
   position: absolute;
   display: block;
   width: 1000%;
@@ -155,13 +270,13 @@ figure.effect h2:after {
   background: white;
   top: 50%;
 }
-figure.effect h2:before {
+figure.pariseffect h2:before {
   left: -1000%;
 }
-figure.effect h2:after {
+figure.pariseffect h2:after {
   right: -1000%;
 }
-figure.effect p {
+figure.pariseffect p {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -173,7 +288,7 @@ figure.effect p {
   line-height: 1.6em;
   font-size: 2em;
 }
-figure.effect a {
+figure.pariseffect a {
   left: 0;
   right: 0;
   top: 0;
@@ -181,18 +296,18 @@ figure.effect a {
   position: absolute;
   z-index: 1;
 }
-figure.effect:hover img,
-figure.effect.hover img {
+figure.pariseffect:hover img,
+figure.pariseffect.hover img {
   opacity: 0.25;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-figure.effect:hover figcaption,
-figure.effect.hover figcaption {
+figure.pariseffect:hover figcaption,
+figure.pariseffect.hover figcaption {
   top: 7%;
   bottom: 7%;
 }
-figure.effect:hover p,
+figure.pariseffect:hover p,
 figure.effect.hover p {
   opacity: 1;
   -webkit-transition-delay: 0.35s;
